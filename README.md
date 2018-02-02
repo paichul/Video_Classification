@@ -13,9 +13,13 @@ classification task in less than 8 seconds for videos of any duration. This modu
 "python extract_frames.uniform.py"
 
 Once the frames are extracted, then the next step is to extract the CNN features for the sampled frames of a video. 
+
+- extractor.py: Extractor object that extracts CNN feature using Inception V3 model or MobileNet model.
+- extract_seq_features.py: this utility tool calls the extract methods in the Extractor object to extract CNN features for the uniformally sampled frames of each video. To use this uitlity tool, type in the command line:
+
+"python extract_seq_features.py"
+
+Once the CNN features
+
 - 
-
-To use this uitlity tool, type in the command line:
-
-"python extract_frames.uniform.py"
 
