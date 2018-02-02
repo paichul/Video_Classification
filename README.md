@@ -19,7 +19,13 @@ Once the frames are extracted, then the next step is to extract the CNN features
 
 "python extract_seq_features.py"
 
-Once the CNN features
+Once the CNN features are extracted for the frames of each video, then one needs to feed the features and the related class labels into the model for training and testing.
 
-- 
+- data.py: creates a generator to generate batches for training and testing
+- train_CNN_LSTM.py: this module calls the generator provided by data.py to get batches for training. In particular, it trains an LSTM model given the input CNN features and the class labels. To train the model, type in the command line:
 
+"python train_CNN_LSTM.py"
+
+- train_CNN.py: this utility tool allows you to fine tune the Inception or MobileNet model using your own dataset. To use this utility tool, type in the command line:
+
+"python train_CNN.py"
