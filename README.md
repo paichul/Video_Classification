@@ -8,5 +8,14 @@ classification task in less than 8 seconds for videos of any duration. This modu
 - Video-Level Information Aggregation Using LSTM
 
 # Files & Instructions
-1. 
+- extract_frames_uniform.py (can be found in the data folder): this is a utility tool that can be used to uniformally sample frames from each video. To use this uitlity tool, type in the command line:
+
+"python extract_frames.uniform.py"
+
+Once the frames are extracted, then the next step is to extract the CNN features for the sampled frames of a video. 
+- 
+
+To use this uitlity tool, type in the command line:
+
+"python extract_frames.uniform.py"
 
